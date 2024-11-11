@@ -1,0 +1,26 @@
+POST http://127.0.0.1:3002/auth/register 
+Content-Type: application/json
+
+{
+    "name":"prueba",
+    "email":"cnb.vizcaino@yavirac.edu.ec",
+    "password": "123456"
+}
+
+
+
+### login sin conexion a BDD
+
+POST http://127.0.0.1:3002/auth/login
+Content-Type: application/json
+
+{
+    "name":"prueba2",
+    "email": "cnb.vizcaino@yavirac.edu.ec",
+    "password":"123456"
+}
+
+
+### users
+GET http://127.0.0.1:3002/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJpYXQiOjE3MzEyOTQxODIsImV4cCI6MTczMTI5Nzc4Mn0.07qoOjwjD23OScvcz73__xCSuYNxfB2tTMqhO3aaeDo
